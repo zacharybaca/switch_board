@@ -1,0 +1,32 @@
+{
+  "name": "react-starter-template-server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node -r dotenv/config server.js",
+    "dev": "nodemon -r dotenv/config server.js",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "mern",
+    "backend",
+    "express",
+    "react-starter-template"
+  ],
+  "author": "Zachary Baca",
+  "license": "ISC",
+  "description": "Backend API for React Starter Template",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.0",
+    "morgan": "^1.10.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "supertest": "^7.2.2",
+    "vitest": "^4.1.9"
+  }
+}

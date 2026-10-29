@@ -1,0 +1,32 @@
+{
+  "name": "react-starter-template",
+  "version": "1.0.0",
+  "description": "🚀 A lightweight MERN starter template.",
+  "main": "server/server.js",
+  "scripts": {
+    "install-all": "npm install && npm install --prefix client && npm install --prefix server",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "start": "node server/server.js"
+  },
+  "keywords": [
+    "mern",
+    "react",
+    "vite",
+    "starter"
+  ],
+  "author": "Zachary Baca",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zacharybaca/react-starter-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zacharybaca/react-starter-template/issues"
+  },
+  "homepage": "https://github.com/zacharybaca/react-starter-template#readme"
+}
