@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./client/src/assets/switchboard-logo.png" alt="SwitchBoard Logo" width="160" height="160" />
+  <img src="./client/src/assets/switch_board_logo.jpg" alt="SwitchBoard Logo" width="160" height="160" />
 
   # SwitchBoard
   ### Departmental Task & Team Workload Engine
