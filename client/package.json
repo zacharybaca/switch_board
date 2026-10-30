@@ -1,9 +1,9 @@
 {
-  "name": "react-starter-template-client",
+  "name": "switch-board--client",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Frontend for React Starter Template",
+  "description": "Frontend for Switch Board",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
