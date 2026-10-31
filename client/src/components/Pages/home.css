@@ -2,7 +2,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #10b981;
+  justify-content: center;
+  background-color: var(--brand-navy, #0F2547);
+  color: var(--text-light, #FFFFFF);
   border-radius: 12px;
-  border: 2px solid black;
+  border: 2px solid var(--brand-cyan, #00C2FF);
+  box-shadow: 0 10px 25px -5px rgba(15, 37, 71, 0.25), 0 0 15px rgba(0, 194, 255, 0.15);
+  margin: 40px auto;
+  text-align: center;
+}
+
+.all-companies-section h2 {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text-light, #FFFFFF);
 }

@@ -25,10 +25,16 @@
   font-weight: 800;
   text-decoration: none;
   color: #ffffff;
+  letter-spacing: -0.02em;
+  transition: filter 0.2s ease;
 }
 
 .footer-logo .logo-accent {
-  color: #10b981; /* Emerald */
+  color: #00c2ff; /* SwitchBoard Electric Cyan */
+}
+
+.footer-logo:hover {
+  filter: drop-shadow(0 0 8px rgba(0, 194, 255, 0.35));
 }
 
 .footer-tagline {
@@ -65,7 +71,7 @@
 }
 
 .footer-column a:hover {
-  color: #10b981;
+  color: #00c2ff; /* SwitchBoard Electric Cyan */
 }
 
 .footer-bottom {

@@ -6,7 +6,9 @@ const NavBar = () => {
     <nav className="main-nav">
       <div className="nav-container">
         <Link to="/" className="nav-logo-link">
-          <h1>SwitchBoard</h1>
+          <h1 className="nav-logo-title">
+            Switch<span className="logo-accent">Board</span>
+          </h1>
         </Link>
 
         <ul className="nav-links">

@@ -6,15 +6,17 @@ const Home = () => {
       <section className="hero-section">
         <div className="container">
           <h1>
-            <span className="hero-accent">SwitchBoard</span>
+            Switch<span className="hero-accent">Board</span>
           </h1>
-          <p>Start building your app with a lightweight full-stack baseline.</p>
+          <p>Assign with confidence. Protect your team's capacity.</p>
         </div>
       </section>
 
       <div className="page-content">
         <section className="all-companies-section">
-          <h2>Includes React frontend, Express API, MongoDB connection, and custom fetcher.</h2>
+          <h2>
+            Includes React frontend, Express API, MongoDB connection, and custom fetcher.
+          </h2>
         </section>
       </div>
     </div>

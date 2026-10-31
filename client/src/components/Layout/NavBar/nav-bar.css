@@ -2,7 +2,7 @@
    1. BASE NAVBAR LAYOUT & LOGO SIZING
    ========================================= */
 .main-nav {
-  background-color: #0f172a; /* Jury Navy Blue */
+  background-color: #0f172a; /* SwitchBoard Deep Navy */
   border-bottom: 1px solid #1e293b;
   position: sticky;
   top: 0;
@@ -18,11 +18,23 @@
   align-items: center; /* Vertically centers everything */
 }
 
-/* Taming the Giant SVG Logo */
+/* Brand Link & Two-Tone Wordmark */
 .nav-logo-link {
   display: flex;
   align-items: center;
   text-decoration: none;
+}
+
+.nav-logo-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #ffffff; /* Overrides global green h1 */
+}
+
+.nav-logo-title .logo-accent {
+  color: #00c2ff; /* SwitchBoard Electric Cyan */
 }
 
 .nav-logo-svg {
@@ -54,7 +66,7 @@
 }
 
 .nav-item:hover {
-  color: #10b981; /* Jury Emerald */
+  color: #00c2ff; /* SwitchBoard Electric Cyan */
 }
 
 /* =========================================
@@ -72,8 +84,8 @@
   background: transparent;
   border: 1px solid #334155;
   color: #f8fafc;
-  padding: 6px 16px 6px 6px; /* Adjusted: less padding on the left to fit the image */
-  border-radius: 30px; /* Made slightly rounder for the avatar */
+  padding: 6px 16px 6px 6px;
+  border-radius: 30px;
   cursor: pointer;
   font-weight: 500;
   display: flex;
@@ -84,15 +96,15 @@
 
 .dropdown-toggle:hover {
   background: rgba(255, 255, 255, 0.05);
-  border-color: #10b981; /* Emerald hover state */
+  border-color: #00c2ff; /* SwitchBoard Electric Cyan hover state */
 }
 
-/* --- NEW: Avatar Styles --- */
+/* --- Avatar Styles --- */
 .nav-avatar {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  object-fit: cover; /* Ensures the image doesn't stretch */
+  object-fit: cover;
   border: 1px solid #334155;
 }
 
@@ -100,7 +112,7 @@
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background-color: #10b981; /* Jury Emerald */
+  background-color: #00c2ff; /* SwitchBoard Electric Cyan */
   color: #0f172a; /* Dark text for contrast */
   display: flex;
   align-items: center;
@@ -125,17 +137,17 @@
 
 .dropdown-menu {
   position: absolute;
-  top: calc(100% + 10px); /* Pushes it just below the toggle button */
-  right: 0; /* Aligns to the right edge of the button */
+  top: calc(100% + 10px);
+  right: 0;
   background: #1e293b;
   border: 1px solid #334155;
   border-radius: 8px;
   width: 220px;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
-  z-index: 1000; /* Ensures it stays on top of page content */
+  z-index: 1000;
   display: flex;
   flex-direction: column;
-  overflow: hidden; /* Keeps hover states inside the rounded borders */
+  overflow: hidden;
   animation: slideDown 0.2s ease-out;
 }
 
@@ -173,7 +185,7 @@
 
 .dropdown-item:hover {
   background: rgba(255, 255, 255, 0.05);
-  color: #10b981; /* Jury Emerald */
+  color: #00c2ff; /* SwitchBoard Electric Cyan */
 }
 
 /* Specific styling for the logout button */
@@ -212,19 +224,17 @@
   transform: scale(1.05);
 }
 
-/* Target the SVG itself when the link is hovered */
+/* Target the wordmark and SVG when the link is hovered */
+.nav-logo-link:hover .nav-logo-title,
 .nav-logo-link:hover .nav-logo-svg {
-  /* This creates a subtle emerald glow using your brand color #10b981 */
-  filter: drop-shadow(0 0 8px rgba(16, 185, 129, 0.4));
+  /* Subtle Electric Cyan glow using brand color #00c2ff */
+  filter: drop-shadow(0 0 8px rgba(0, 194, 255, 0.4));
 }
 
-/* Optional: Target specific shapes inside the SVG
-   (If you used className="svgShape" in your paths) */
 .nav-logo-link:hover .nav-logo-svg .svgShape {
   transition: fill 0.3s ease;
 }
 
-/* Example: Make the green background rect even more vibrant on hover */
 .nav-logo-link:hover .nav-logo-svg rect[fill='#34a853'] {
-  fill: #10b981;
+  fill: #00c2ff;
 }

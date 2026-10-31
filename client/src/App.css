@@ -39,17 +39,26 @@ body {
 .hero-section {
   padding: 80px 20px;
   background-color: #0f172a;
-  color: white;
+  color: var(--text-light, #FFFFFF);
   text-align: center;
+  border-bottom: 1px solid #1e293b;
 }
 
 .hero-section h1 {
   font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
   margin-bottom: 1rem;
+  color: var(--text-light, #FFFFFF);
 }
 
 .hero-accent {
-  color: #10b981;
+  color: var(--brand-cyan, #00C2FF);
+}
+
+.hero-section p {
+  font-size: 1.15rem;
+  color: #cbd5e1;
 }
 
 /* Transitions */
@@ -66,4 +75,43 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Color Scheme */
+.login-brand-panel {
+  background-color: var(--brand-navy, #0F2547);
+  color: #ffffff;
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.login-logo {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 1.25rem;
+}
+
+.login-brand-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.5rem 0;
+}
+
+.login-tagline {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--brand-cyan, #00C2FF);
+  margin: 0 0 0.75rem 0;
+}
+
+.login-subheadline {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 42ch;
+  margin: 0;
 }

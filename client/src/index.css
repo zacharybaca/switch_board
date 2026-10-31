@@ -5,6 +5,11 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --brand-navy: #0F2547;   /* Deep Navy - primary dark surfaces */
+  --brand-blue: #1363DF;   /* Royal Blue - secondary cable tone */
+  --brand-cyan: #00C2FF;   /* Electric Cyan - primary highlight */
+  --brand-orange: #FF7A00; /* Signal Orange - node accent */
+  --text-light: #FFFFFF;
 }
 
 body {
@@ -17,12 +22,13 @@ body {
 
 a {
   font-weight: 500;
-  color: #10b981;
+  color: var(--brand-blue, #1363DF);
   text-decoration: inherit;
+  transition: color 0.2s ease;
 }
 
 a:hover {
-  color: #059669;
+  color: var(--brand-cyan, #00C2FF);
 }
 
 button {
@@ -31,12 +37,13 @@ button {
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 600;
-  background-color: #0f172a;
-  color: white;
+  background-color: var(--brand-navy, #0F2547);
+  color: var(--text-light, #FFFFFF);
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.2s ease;
 }
 
 button:hover {
-  background-color: #1e293b;
+  background-color: var(--brand-blue, #1363DF);
+  border-color: var(--brand-cyan, #00C2FF);
 }
