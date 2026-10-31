@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-brand">
           <Link to="/" className="footer-logo">
-            MERN<span className="logo-accent">Starter</span>
+            Switch<span className="logo-accent">Board</span>
           </Link>
           <p className="footer-tagline">
             Lightweight React + Express + MongoDB starter template.
@@ -18,9 +18,9 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; {currentYear} MERN Starter</p>
+        <p>&copy; {currentYear} SwitchBoard</p>
         <div className="footer-legal">
-          <span>Built for MERN projects</span>
+          <span>Built for SwitchBoard projects</span>
         </div>
       </div>
     </footer>

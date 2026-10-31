@@ -6,7 +6,7 @@ const Home = () => {
       <section className="hero-section">
         <div className="container">
           <h1>
-            <span className="hero-accent">MERN Boilerplate</span>
+            <span className="hero-accent">SwitchBoard</span>
           </h1>
           <p>Start building your app with a lightweight full-stack baseline.</p>
         </div>
